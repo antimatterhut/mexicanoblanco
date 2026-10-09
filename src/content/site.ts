@@ -140,6 +140,10 @@ export const homeCopy = {
 };
 
 export const storyCopy = {
+  // TODO: real story page copy from owner
+  heading: "Our Story",
+  eyebrow: "[PLACEHOLDER] Where it all began",
+  closingButtonLabel: "Meet the salsas",
   // TODO: real pull quote from owner
   pullQuote: "[PLACEHOLDER] A memorable line from the founder goes here.",
   // TODO: real story sections from owner
@@ -208,13 +212,35 @@ export const uiCopy = {
   closeMenu: "Close",
   mainNavLabel: "Main",
   footerNavLabel: "Footer",
-  stubNote: "Coming in a later phase.",
   heatLabelPrefix: "Heat",
 };
 
-export const stubPages = {
-  home: { title: business.name },
-  salsas: { title: "Salsas" },
-  ourStory: { title: "Our Story" },
-  findUs: { title: "Find Us" },
+// Optional mailing list / signup form endpoint. Empty string = no signup block shown.
+export const SIGNUP_FORM_URL = "";
+
+export const findUsCopy = {
+  // TODO: real find-us copy from owner
+  eyebrow: "[PLACEHOLDER] Where to taste",
+  heading: "Find Us",
+  intro: "[PLACEHOLDER] A short line about where to find the salsas.",
+  emptyMessage: "Follow us on Instagram for where we'll be next.",
+  groups: [
+    { kind: "market", heading: "Markets" },
+    { kind: "shop", heading: "Shops" },
+    { kind: "event", heading: "Events" },
+  ] as { kind: Location["kind"]; heading: string }[],
+  visitLinkLabel: "Visit website",
+  contactEyebrow: "[PLACEHOLDER] Say hello",
+  contactHeading: "Contact",
+  contactIntro:
+    "[PLACEHOLDER] A line inviting questions, wholesale inquiries, or just saying hi.",
+  emailButtonLabel: "Email us",
+  instagramButtonLabel: "Instagram",
+};
+
+export const signupCopy = {
+  // TODO: real signup copy from owner
+  heading: "[PLACEHOLDER] Stay in the loop",
+  intro: "[PLACEHOLDER] A line about what people get by signing up.",
+  buttonLabel: "Sign up",
 };
