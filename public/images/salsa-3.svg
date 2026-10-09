@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="salsa-3.svg">
+  <rect width="800" height="800" fill="#B42318"/>
+  <circle cx="100" cy="133" r="80" fill="#FFF6E5" opacity="0.18"/>
+  <circle cx="700" cy="666" r="114" fill="#FFF6E5" opacity="0.14"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-weight="bold" font-size="66" fill="#FFF6E5">salsa-3.svg</text>
+  <text x="50%" y="464" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="36" fill="#FFF6E5">placeholder image</text>
+</svg>

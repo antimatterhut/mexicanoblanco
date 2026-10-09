@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="hero.svg">
+  <rect width="1200" height="900" fill="#F5A524"/>
+  <circle cx="150" cy="150" r="90" fill="#2A1710" opacity="0.18"/>
+  <circle cx="1050" cy="750" r="128" fill="#2A1710" opacity="0.14"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-weight="bold" font-size="75" fill="#2A1710">hero.svg</text>
+  <text x="50%" y="522" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="40" fill="#2A1710">placeholder image</text>
+</svg>

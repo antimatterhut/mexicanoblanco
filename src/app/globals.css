@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/*
+  Brand palette: warm, bold, playful, handmade (defaults; owner has not supplied colors).
+  Contrast ratios (WCAG AA needs 4.5:1 for body text, 3:1 for large text and UI):
+    dark    on light    15.93   dark    on surface 13.39
+    muted   on light     6.78   muted   on surface  5.70
+    primary on light     6.13   primary on surface  5.15
+    light   on primary   6.13   light   on primary-dark 8.48
+    dark    on accent    8.38   accent  on dark      8.38
+    light   on dark     15.93
+  Do NOT use: primary on accent (3.22), dark on primary (2.60).
+*/
+@theme inline {
+  --color-light: #fff6e5; /* cream, page background */
+  --color-surface: #f3e2c0; /* warm sand, cards and bands */
+  --color-dark: #2a1710; /* espresso, text and dark bands */
+  --color-primary: #b42318; /* chili red */
+  --color-primary-dark: #8e1a11; /* chili red, hover */
+  --color-accent: #f5a524; /* marigold */
+  --color-muted: #6b5144; /* secondary text */
+
+  --font-display: var(--font-alfa-slab), Georgia, serif;
+  --font-body: var(--font-nunito), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Keep anchor targets clear of the sticky header. */
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
