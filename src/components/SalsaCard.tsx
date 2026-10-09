@@ -14,7 +14,7 @@ export default function SalsaCard({ salsa }: { salsa: Salsa }) {
         alt={salsa.image.alt}
         width={800}
         height={800}
-        sizes="(min-width: 1280px) 384px, (min-width: 768px) 50vw, 100vw"
+        sizes="(min-width: 1280px) 352px, (min-width: 1152px) 540px, (min-width: 768px) calc(50vw - 36px), (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
         className="aspect-square w-full object-cover"
       />
       <div className="flex flex-1 flex-col gap-2 p-5">

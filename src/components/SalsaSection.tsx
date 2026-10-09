@@ -21,7 +21,7 @@ export default function SalsaSection({ salsa, index }: SalsaSectionProps) {
         alt={salsa.image.alt}
         width={800}
         height={800}
-        sizes="(min-width: 1152px) 552px, (min-width: 768px) 50vw, 100vw"
+        sizes="(min-width: 1152px) 528px, (min-width: 768px) calc(50vw - 48px), (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
         className={`aspect-square w-full rounded-2xl object-cover ${
           imageOnRight ? "md:order-2" : ""
         }`.trim()}

@@ -1,8 +1,24 @@
+import type { Metadata } from "next";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
 import SignupBlock from "@/components/SignupBlock";
-import { business, findUsCopy, locations } from "@/content/site";
+import { business, findUsCopy, locations, seoCopy } from "@/content/site";
+
+export const metadata: Metadata = {
+  title: seoCopy.findUs.title,
+  description: seoCopy.findUs.description,
+  alternates: { canonical: "/find-us" },
+  openGraph: {
+    title: seoCopy.findUs.title,
+    description: seoCopy.findUs.description,
+    url: "/find-us",
+  },
+  twitter: {
+    title: seoCopy.findUs.title,
+    description: seoCopy.findUs.description,
+  },
+};
 
 export default function FindUsPage() {
   const groups = findUsCopy.groups

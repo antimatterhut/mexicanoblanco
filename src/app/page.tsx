@@ -1,10 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
 import OrderButton from "@/components/OrderButton";
 import SalsaCard from "@/components/SalsaCard";
 import Section from "@/components/Section";
 import SectionHeading from "@/components/SectionHeading";
-import { business, heroImage, homeCopy, salsas } from "@/content/site";
+import { business, heroImage, homeCopy, salsas, seoCopy } from "@/content/site";
+
+export const metadata: Metadata = {
+  description: seoCopy.home.description,
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (
@@ -31,7 +37,7 @@ export default function Home() {
           width={1200}
           height={900}
           priority
-          sizes="(min-width: 1280px) 576px, (min-width: 768px) 50vw, 100vw"
+          sizes="(min-width: 1152px) 532px, (min-width: 768px) calc(50vw - 44px), (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
           className="w-full rounded-2xl"
         />
       </Section>

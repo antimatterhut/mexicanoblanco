@@ -244,3 +244,49 @@ export const signupCopy = {
   intro: "[PLACEHOLDER] A line about what people get by signing up.",
   buttonLabel: "Sign up",
 };
+
+// True for values that are still placeholders or empty (used to keep them out of structured data).
+export function isPlaceholder(value: string): boolean {
+  return (
+    value.trim() === "" ||
+    value.includes("[PLACEHOLDER]") ||
+    value.includes("example.com") ||
+    value.includes("/placeholder") ||
+    value === "@placeholder"
+  );
+}
+
+export const seoCopy = {
+  titleTemplate: `%s | ${business.name}`,
+  // TODO: real page descriptions from owner
+  home: {
+    description: business.shortDescription,
+  },
+  salsas: {
+    title: "Salsas",
+    description:
+      "[PLACEHOLDER] Meet the Mexicano Blanco salsas, from mild to hot: flavor, heat, and ingredients.",
+  },
+  ourStory: {
+    title: "Our Story",
+    description:
+      "[PLACEHOLDER] The story behind Mexicano Blanco and the people who make the salsas.",
+  },
+  findUs: {
+    title: "Find Us",
+    description:
+      "[PLACEHOLDER] Where to taste Mexicano Blanco salsas, and how to get in touch.",
+  },
+  notFound: {
+    title: "Page not found",
+  },
+  ogImageAlt: `${business.name}`,
+};
+
+export const notFoundCopy = {
+  eyebrow: "404",
+  heading: "Page not found",
+  body: "That page isn't on the table. Head back home or have a look at the salsas.",
+  homeLabel: "Back home",
+  salsasLabel: "See the salsas",
+};
