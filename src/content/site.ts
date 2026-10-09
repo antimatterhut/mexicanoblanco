@@ -125,6 +125,18 @@ export const homeCopy = {
   // TODO: real story teaser from owner
   storyTeaser:
     "[PLACEHOLDER] A short teaser that leads into the full story page.",
+  // TODO: real section copy from owner
+  meetSalsasLabel: "Meet the salsas",
+  salsasEyebrow: "[PLACEHOLDER] The lineup",
+  salsasHeading: "[PLACEHOLDER] Our salsas",
+  salsasIntro: "[PLACEHOLDER] A line introducing the range, from mild to hot.",
+  whyEyebrow: "[PLACEHOLDER] Why us",
+  whyHeading: "Why Mexicano Blanco",
+  storyEyebrow: "Our story",
+  storyHeading: "[PLACEHOLDER] Where it all started",
+  storyButtonLabel: "Read our story",
+  closingHeading: "[PLACEHOLDER] Ready to taste?",
+  closingBody: "[PLACEHOLDER] A short line inviting people to try the salsas.",
 };
 
 export const storyCopy = {
@@ -183,6 +195,7 @@ export const uiCopy = {
   mainNavLabel: "Main",
   footerNavLabel: "Footer",
   stubNote: "Coming in a later phase.",
+  heatLabelPrefix: "Heat",
 };
 
 export const stubPages = {
