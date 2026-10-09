@@ -159,6 +159,20 @@ export const storyCopy = {
   ],
 };
 
+export const salsasPageCopy = {
+  // TODO: real salsas page copy from owner
+  eyebrow: "[PLACEHOLDER] The lineup",
+  heading: "Salsas",
+  intro: "[PLACEHOLDER] A short intro to the salsas, from mild to hot.",
+  filterLabel: "Filter by heat",
+  filterAll: "All",
+  ingredientsHeading: "Ingredients",
+};
+
+export function showingCountLabel(count: number): string {
+  return `Showing ${count} ${count === 1 ? "salsa" : "salsas"}`;
+}
+
 export const heroImage = {
   src: "/images/hero.svg",
   // TODO: real hero photo and alt text from owner

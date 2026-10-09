@@ -1,13 +1,27 @@
+import SalsaFilter from "@/components/SalsaFilter";
+import SalsaSection from "@/components/SalsaSection";
 import Section from "@/components/Section";
-import { stubPages, uiCopy } from "@/content/site";
+import SectionHeading from "@/components/SectionHeading";
+import { salsas, salsasPageCopy } from "@/content/site";
 
 export default function SalsasPage() {
   return (
-    <Section>
-      <h1 className="font-display text-4xl md:text-6xl">
-        {stubPages.salsas.title}
-      </h1>
-      <p className="mt-4 text-lg text-muted">{uiCopy.stubNote}</p>
-    </Section>
+    <>
+      <Section innerClassName="pb-6 md:pb-8">
+        <SectionHeading
+          level={1}
+          eyebrow={salsasPageCopy.eyebrow}
+          heading={salsasPageCopy.heading}
+          intro={salsasPageCopy.intro}
+        />
+      </Section>
+      <SalsaFilter
+        items={salsas.map((salsa, index) => ({
+          slug: salsa.slug,
+          heat: salsa.heat,
+          node: <SalsaSection salsa={salsa} index={index} />,
+        }))}
+      />
+    </>
   );
 }
