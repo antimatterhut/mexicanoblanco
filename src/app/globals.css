@@ -20,8 +20,13 @@
   --color-accent: #f5a524; /* marigold */
   --color-muted: #6b5144; /* secondary text */
 
-  --font-display: var(--font-alfa-slab), Georgia, serif;
-  --font-body: var(--font-nunito), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-lora), Georgia, serif;
+}
+
+/* Fraunces is a variable font; give display text a heavy, warm weight. */
+.font-display {
+  font-weight: 800;
 }
 
 html {

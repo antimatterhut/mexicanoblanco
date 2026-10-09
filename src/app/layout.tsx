@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Alfa_Slab_One, Nunito } from "next/font/google";
+import { Fraunces, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,15 +12,14 @@ import {
   uiCopy,
 } from "@/content/site";
 
-const alfaSlab = Alfa_Slab_One({
-  variable: "--font-alfa-slab",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: "400",
   display: "swap",
 });
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
   display: "swap",
 });
@@ -61,7 +60,7 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${alfaSlab.variable} ${nunito.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${lora.variable}`}>
       <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
